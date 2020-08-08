@@ -14,7 +14,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
     get static_pages_home_url
     assert_response :success #makes sure that the HTTP 'GET' request returns 200 - okay
-    assert_select "title", "Home | #{@base_title}" #uses HTML selector tag "title" to test for presence of the text on the right
+    assert_select "title", "Ruby on Rails Tutorial Sample App" #uses HTML selector tag "title" to test for presence of the text on the right
   end
 
   test "should get help" do
