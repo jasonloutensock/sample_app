@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   
   def hello
-    render html: "test deploy to heroku"
+    render html: "Hello"
   end
   
 end
