@@ -7,7 +7,7 @@ class SessionsControllerTest < ActionDispatch::IntegrationTest
   end
   
   test "login with valid information" do
-    get login_ptah
+    get login_path
     assert_template 'sessions/new'
     post login_path, params: { session: { email: "", password: "" } }
     assert_template 'sessions/new'
