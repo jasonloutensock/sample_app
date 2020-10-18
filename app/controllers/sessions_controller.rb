@@ -8,8 +8,8 @@ class SessionsController < ApplicationController
       log_in user
       redirect_to user
     else
-      render 'new'
       flash.now[:danger] = 'Invalid email/password combination' #flash.now will cause the error to vanish on re-render
+      render 'new'
     end
   end
   
